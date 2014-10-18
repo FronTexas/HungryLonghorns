@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <LinearLayout
+        android:id="@+id/llOrangeBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/HLYellow"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivHungryLonghornText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/hungry_longhorn_text" />
+
+        <LinearLayout
+            android:id="@+id/llTodayAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvTodayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Today"
+                android:textColor="@color/White"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/seperator"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/White"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
